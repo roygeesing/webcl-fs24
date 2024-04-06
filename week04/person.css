@@ -52,3 +52,7 @@ input.invalid {
 .selected {
     box-shadow: 0 0 0.2em gold;
 }
+
+.table-head {
+    text-align: left;
+}

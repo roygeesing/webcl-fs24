@@ -42,13 +42,16 @@ const personListItemProjector = (masterController, selectionController, rootElem
     // create table element if it doesn't already exist
     if (tableElement == null) {
         tableElement = document.createElement('table');
+        tableElement.id = 'person-list';
         rootElement.appendChild(tableElement);
 
         // create header row
         const headerRow = document.createElement('tr');
+        headerRow.id = 'person-table-header';
         tableElement.appendChild(headerRow);
 
         const deleteButtonHeader = document.createElement('th');
+        headerRow.setAttribute('class','table-head') ;
         headerRow.appendChild(deleteButtonHeader);
 
         const firstnameHeader = document.createElement('th');
