@@ -1,6 +1,7 @@
 import { ObservableList, Observable }                   from "../kolibri/observable.js";
 import { Attribute, LABEL }                             from "../kolibri/presentationModel.js";
-import { personListItemProjector, personFormProjector } from "./personTableProjector.js";
+// import { personListItemProjector, personFormProjector } from "./personTableProjector.js";
+import { personListItemProjector, personFormProjector } from "./personProjector.js";
 
 export { MasterController, MasterView, SelectionController, DetailView }
 

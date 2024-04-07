@@ -47,11 +47,9 @@ const personListItemProjector = (masterController, selectionController, rootElem
 
         // create header row
         const headerRow = document.createElement('tr');
-        headerRow.id = 'person-table-header';
         tableElement.appendChild(headerRow);
 
         const deleteButtonHeader = document.createElement('th');
-        headerRow.setAttribute('class','table-head') ;
         headerRow.appendChild(deleteButtonHeader);
 
         const firstnameHeader = document.createElement('th');

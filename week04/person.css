@@ -53,6 +53,32 @@ input.invalid {
     box-shadow: 0 0 0.2em gold;
 }
 
-.table-head {
+/* custom */
+
+#person-list {
+    border-collapse: collapse;
+}
+
+#person-list th, #person-list td {
+    padding: .3em;
+}
+
+#person-list th + th, #person-list td + td {
+    border-left: 1px solid black;
+}
+
+#person-list tr:has(th) {
+    border-bottom: 1px solid black;
+}
+
+#person-list tr:nth-child(2n) {
+    background-color: #F2F2F2;
+}
+
+#person-list .selected {
+    position: relative;
+}
+
+#person-list th {
     text-align: left;
 }
