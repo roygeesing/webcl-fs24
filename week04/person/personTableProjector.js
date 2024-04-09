@@ -55,12 +55,10 @@ const personListItemProjector = (masterController, selectionController, rootElem
         const firstnameHeader = document.createElement('th');
         headerRow.appendChild(firstnameHeader);
         firstnameHeader.id = 'firstnameHeader';
-        firstnameHeader.innerText = '<First Name>';
 
         const lastnameHeader = document.createElement('th');
         headerRow.appendChild(lastnameHeader);
         lastnameHeader.id = 'lastnameHeader';
-        lastnameHeader.innerText = '<Last Name>';
 
         person.firstname.getObs(LABEL).onChange( newLabel =>
             tableElement.querySelector("#firstnameHeader").textContent = newLabel);
@@ -109,6 +107,7 @@ const personListItemProjector = (masterController, selectionController, rootElem
     const lastNameCell = document.createElement('td');
     row.appendChild(lastNameCell);
     lastNameCell.appendChild(lastnameInputElement);
+
     // todo: what to do with selection when person was added?
     selectionController.setSelectedPerson(person);
 };
